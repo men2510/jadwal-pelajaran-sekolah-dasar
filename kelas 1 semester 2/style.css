@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 30px;
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.header h1 {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 3em;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #FFA07A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.emoji-decoration {
+    font-size: 2em;
+    display: inline-block;
+    animation: spin 3s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0%, 100% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+}
+
+.schedule {
+    position: relative;
+    z-index: 1;
+}
+
+.day-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.day-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.day-card:nth-child(1) { background: linear-gradient(135deg, #FA8BFF 0%, #2BD2FF 90%); }
+.day-card:nth-child(2) { background: linear-gradient(135deg, #FFD3A5 0%, #FD6585 100%); }
+.day-card:nth-child(3) { background: linear-gradient(135deg, #A8EDEA 0%, #FED6E3 100%); }
+.day-card:nth-child(4) { background: linear-gradient(135deg, #FFE985 0%, #FA742B 100%); }
+.day-card:nth-child(5) { background: linear-gradient(135deg, #A1FFCE 0%, #FAFFD1 100%); }
+.day-card:nth-child(6) { background: linear-gradient(135deg, #D299C2 0%, #FEF9D7 100%); }
+
+.day-name {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 1.8em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subjects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.subject {
+    background: rgba(255,255,255,0.9);
+    padding: 8px 15px;
+    border-radius: 15px;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.9em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.subject:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+.floating-emoji {
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.3;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.emoji1 { top: 10%; left: 5%; animation-delay: 0s; }
+.emoji2 { top: 30%; right: 10%; animation-delay: 1s; }
+.emoji3 { bottom: 20%; left: 10%; animation-delay: 2s; }
+.emoji4 { bottom: 10%; right: 15%; animation-delay: 1.5s; }@import url('https://fonts.googleapis.com/css2?family=Bubblegum+Sans&family=Poppins:wght@600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.container {
+    background: white;
+    border-radius: 30px;
+    padding: 40px;
+    max-width: 800px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+    position: relative;
+    overflow: hidden;
+}
+
+.container::before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    right: -50%;
+    width: 200%;
+    height: 200%;
+    background: radial-gradient(circle, rgba(255,255,255,0.1) 0%, transparent 70%);
+    animation: rotate 20s linear infinite;
+}
+
+@keyframes rotate {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.header h1 {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 3em;
+    background: linear-gradient(45deg, #FF6B6B, #4ECDC4, #45B7D1, #FFA07A);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    margin-bottom: 10px;
+    animation: bounce 2s ease-in-out infinite;
+}
+
+@keyframes bounce {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+}
+
+.emoji-decoration {
+    font-size: 2em;
+    display: inline-block;
+    animation: spin 3s ease-in-out infinite;
+}
+
+@keyframes spin {
+    0%, 100% { transform: rotate(-10deg); }
+    50% { transform: rotate(10deg); }
+}
+
+.schedule {
+    position: relative;
+    z-index: 1;
+}
+
+.day-card {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    border-radius: 20px;
+    padding: 20px;
+    margin-bottom: 15px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+    position: relative;
+    overflow: hidden;
+}
+
+.day-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.day-card:nth-child(1) { background: linear-gradient(135deg, #FA8BFF 0%, #2BD2FF 90%); }
+.day-card:nth-child(2) { background: linear-gradient(135deg, #FFD3A5 0%, #FD6585 100%); }
+.day-card:nth-child(3) { background: linear-gradient(135deg, #A8EDEA 0%, #FED6E3 100%); }
+.day-card:nth-child(4) { background: linear-gradient(135deg, #FFE985 0%, #FA742B 100%); }
+.day-card:nth-child(5) { background: linear-gradient(135deg, #A1FFCE 0%, #FAFFD1 100%); }
+.day-card:nth-child(6) { background: linear-gradient(135deg, #D299C2 0%, #FEF9D7 100%); }
+
+.day-name {
+    font-family: 'Bubblegum Sans', cursive;
+    font-size: 1.8em;
+    color: white;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.subjects {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.subject {
+    background: rgba(255,255,255,0.9);
+    padding: 8px 15px;
+    border-radius: 15px;
+    color: #333;
+    font-weight: 600;
+    font-size: 0.9em;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition: transform 0.2s;
+}
+
+.subject:hover {
+    transform: scale(1.05);
+}
+
+.footer {
+    text-align: center;
+    margin-top: 30px;
+    position: relative;
+    z-index: 1;
+}
+
+.footer p {
+    color: #666;
+    font-size: 1.2em;
+}
+
+.floating-emoji {
+    position: absolute;
+    font-size: 2em;
+    opacity: 0.3;
+    animation: float 4s ease-in-out infinite;
+}
+
+@keyframes float {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-20px) rotate(5deg); }
+}
+
+.emoji1 { top: 10%; left: 5%; animation-delay: 0s; }
+.emoji2 { top: 30%; right: 10%; animation-delay: 1s; }
+.emoji3 { bottom: 20%; left: 10%; animation-delay: 2s; }
+.emoji4 { bottom: 10%; right: 15%; animation-delay: 1.5s; }
